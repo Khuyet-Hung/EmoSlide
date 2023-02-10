@@ -1,0 +1,57 @@
+.content .button {
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+}
+
+.content .button .btn_ {
+    border: none;
+    outline: none;
+    font-size: 54px;
+    background-color: transparent;
+    border-radius: 0;
+    height: 100%;
+    width: 200px;
+    opacity: 0;
+}
+
+.content .button .btn_ i {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.content .button .btn_:focus {
+    outline: 0 !important;
+}
+
+.content .button .btn_:hover {
+    opacity: 1;
+}
+
+.content .button.previous {}
+
+.content .button.next {
+    right: 0px;
+}
+
+.content .button.previous i {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.content .button.next i {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}

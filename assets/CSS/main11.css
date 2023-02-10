@@ -1,0 +1,163 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: yellow;
+}
+
+.bg-gradient-start {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+}
+
+.bg-gradient-end {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+}
+
+.bg-gradient-center {
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+}
+
+.text-gradient-center {
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.text-gradient-end {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.text-gradient-start {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.content_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.heading .logo {
+    text-align: center;
+}
+
+.heading .heading_title {
+    display: flex;
+    align-items: center;
+}
+
+.heading .start-title {
+    line-height: 218px;
+    text-align: end;
+    padding-right: 24px;
+    font-size: 164px;
+    font-weight: 800;
+}
+
+.heading .end-title {
+    padding-top: 14px;
+    line-height: 82px;
+    font-size: 57px;
+    font-weight: 800;
+}
+
+.main.mt {
+    margin-top: 20px;
+}
+
+.main .frame {
+    border-style: solid;
+    border-color: #fbca50;
+}
+
+.main .frame.radius {
+    border-width: 8px;
+    border-radius: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 406px;
+    text-transform: uppercase;
+}
+
+.main .frame.square {
+    border-width: 5px;
+    text-align: end;
+    font-size: 24px;
+    float: right;
+    width: 90%;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 18px 30px;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(circle at center, #fde89b, #f1b721);
+}
+
+.main .frame.square.mt {
+    margin-top: 15px;
+}
+
+.main .frame.square span:first-child {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.main .frame .frame_title {
+    font-size: 58px;
+    font-weight: 800;
+}
+
+.main .frame .frame_text {
+    padding: 0 30px 14px 30px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1400px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 954px) {
+    .frame.mt-e {
+        margin-top: 30px !important;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .start-title {
+        font-size: 20vw !important;
+        line-height: 26vw !important;
+    }
+    .end-title {
+        font-size: 6vw !important;
+    }
+}

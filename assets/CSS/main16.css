@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: yellow;
+}
+
+.gradient-start {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+}
+
+.gradient-end {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+}
+
+.heading {
+    padding-top: 40px;
+}
+
+.heading .logo {
+    text-align: center;
+}
+
+.heading .title_heading {
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.heading .title .s-title {
+    display: flex;
+    align-items: flex-end;
+    font-size: 44px;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.heading .title .s-title.j {
+    justify-content: end;
+}
+
+.heading .title .m-title.spacing-3 {
+    letter-spacing: 2.5px;
+}
+
+.heading .title .m-title {
+    line-height: 94px;
+    font-size: 80px;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    width: fit-content;
+}
+
+.heading .title .m-title.mg {
+    margin-left: 40px;
+}
+
+.heading .title .dash-title {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.heading .title .dash {
+    margin-top: 50px;
+    height: 10px;
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+}
+
+.heading .title .dash.w-233 {
+    width: 233px;
+}
+
+.heading .title .dash.w-303 {
+    width: 303px;
+}
+
+.main {
+    padding-bottom: 40px;
+}
+
+.main img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        display: none;
+    }
+    .title_heading {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .s-title {
+        width: 100%;
+        justify-content: start !important;
+    }
+    .heading .title .s-title {
+        width: 100%;
+    }
+}

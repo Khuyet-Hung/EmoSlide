@@ -1,0 +1,117 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: yellow;
+}
+
+.bg-gradient-start {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+}
+
+.bg-gradient-end {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+}
+
+.bg-gradient-center {
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+}
+
+.text-gradient-center {
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.text-gradient-end {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.text-gradient-start {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.heading {
+    padding-top: 20px;
+    align-items: center;
+}
+
+.heading .logo {
+    text-align: center;
+}
+
+.heading .title_heading {
+    text-transform: uppercase;
+    padding-left: 0;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    justify-content: center;
+}
+
+.heading .title_heading span:first-child {
+    line-height: 153px;
+    width: fit-content;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.main.mt {
+    margin-top: 20px;
+}
+
+.main .info-card {
+    border: 3px solid #efc049;
+}
+
+.main .img {}
+
+.main .img img {
+    border-right: 3px solid #efc049;
+}
+
+.main .content_card {
+    padding-left: 32px;
+}
+
+.main .heading_card {
+    color: #000;
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 18px;
+}
+
+.main .text_card {
+    font-size: 24px;
+    padding: 3px 18px 3px 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        display: none;
+    }
+    .info-card.m {
+        margin-bottom: 50px;
+    }
+}

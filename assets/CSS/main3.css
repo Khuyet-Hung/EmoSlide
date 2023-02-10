@@ -1,0 +1,126 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: yellow;
+}
+
+.gradient-start {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+}
+
+.gradient-end {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+}
+
+.gradient-center {
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+}
+
+.heading {
+    padding-top: 60px;
+}
+
+.heading .logo {
+    text-align: center;
+}
+
+.heading .title_heading {
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.heading .title {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.heading .title_heading span:first-child {
+    line-height: 113px;
+    width: fit-content;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.heading .title_heading span:last-child {
+    line-height: 79px;
+    width: fit-content;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.xs-title {
+    width: fit-content;
+    font-size: 38px;
+    font-weight: 700;
+    border-radius: 14px;
+    padding: 6px 18px;
+    text-transform: uppercase;
+    letter-spacing: -1.4px;
+}
+
+.main.mt {
+    margin-top: 70px;
+}
+
+.main .carding {
+    /* border: 3px solid; */
+    /* border-image-source: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+    border-image-slice: 1; */
+    /* border-bottom-right-radius: 40px; */
+    /* border-bottom: 50px solid #1E90FF;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent; */
+}
+
+.main .carding img {}
+
+.main .carding .carding_text {
+    text-align: center;
+    max-width: 300px;
+    margin-top: 20px;
+    font-size: 26px;
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .logo {
+        display: none;
+    }
+    .item {
+        margin-top: 100px;
+    }
+    .xs-title {
+        word-spacing: normal;
+        text-align: center;
+    }
+    .heading .title {
+        text-align: center;
+        margin: auto;
+    }
+    .heading .title span {
+        width: 100% !important;
+    }
+    .main .carding .carding_text {
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,214 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: yellow;
+}
+
+.gradient-start {
+    background: linear-gradient(to right, #f1b721 0%, #fde89b 100%);
+}
+
+.gradient-end {
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+}
+
+.gradient-center {
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+}
+
+.content {
+    overflow: hidden;
+}
+
+.heading {
+    padding-top: 60px;
+}
+
+.heading .logo {
+    text-align: center;
+}
+
+.heading .title_heading {
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.heading .title {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.heading .title_heading span:first-child {
+    line-height: 113px;
+    width: fit-content;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.heading .title_heading span:last-child {
+    line-height: 102px;
+    width: fit-content;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.xs-title {
+    text-align: center;
+    width: 60%;
+    font-size: 47px;
+    font-weight: 700;
+    border-radius: 14px;
+    padding: 0px 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.main.mt {
+    margin-top: 30px;
+}
+
+.main .frame {
+    position: relative;
+    border-style: solid;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(circle at center, #fde89b, #f1b721);
+}
+
+.main .frame.left {
+    border-left: 0px;
+    flex-direction: row-reverse;
+}
+
+
+/* .main .frame.right {
+    border-right: 0px;
+} */
+
+.main .row.w {
+    width: 92%;
+}
+
+.main .frame .text {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    line-height: 34px;
+    padding: 20px 4px;
+    font-size: 27px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: radial-gradient(circle at center, #fde89b, #f1b721);
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .frame .text.left {
+    margin-left: 66px;
+}
+
+
+/* .main .frame .text.right {
+    margin-right: 66px;
+    text-align: end;
+    justify-content: end;
+} */
+
+.main .number {
+    /* text-shadow: 0 0 14px black; */
+    width: fit-content;
+    position: absolute;
+    font-size: 178px;
+    font-weight: 900;
+    /* height: -webkit-fill-available; */
+    background: linear-gradient(to right, #fde89b 0%, #f1b721 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .number.left {
+    top: -90px;
+    left: -70px;
+}
+
+
+/* .main .number.right {
+    top: -90px;
+    right: -53px;
+} */
+
+.main .icon {
+    display: flex;
+    align-items: center;
+}
+
+.main .icon.left {
+    justify-content: flex-end;
+}
+
+.main .icon.right {}
+
+@media screen and (max-width: 1400px) {
+    .logo {
+        display: none;
+    }
+    .main .frame .text.left.right {
+        margin-left: 66px;
+    }
+    .main .number.left.right {
+        top: -90px;
+        left: -70px;
+    }
+    .main .frame.left.right {}
+    .main .icon.left.right {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main .frame .text.left.right {
+        margin-left: 0px !important;
+        margin-right: 66px !important;
+        text-align: end !important;
+        justify-content: end !important;
+    }
+    .main .number.left.right {
+        top: -90px !important;
+        right: -53px !important;
+        left: auto !important;
+    }
+    .main .frame.left.right {
+        border-right: 0px !important;
+        border-left-width: 5px !important;
+        border-style: solid;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .heading .title_heading span:last-child {
+        font-size: 8vw !important;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .xs-title {
+        font-size: 6.2vw !important;
+    }
+}
